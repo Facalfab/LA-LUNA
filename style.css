@@ -69,9 +69,40 @@ h1 {
     align-items: center;
     padding: 10px;
     margin: 20px;
-    border: 5px #004E45;
+    border: 5px ;
 }
 
 .features__text h1 {
   color: #00443c;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.features__text h3 {
+  color: #00443c;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.boxes__benefit-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 16px;
+}
+
+.benefit-box {
+  border: 1px solid #00443c;
+  padding: 16px;
+  border-radius: 12px;
+  flex: 1 1 200px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);;
+}
+
+.benefit-box:hover {
+  border-color: #8B0000;
+  transform: scale(1.01);
+  cursor: pointer;
 }
