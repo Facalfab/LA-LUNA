@@ -1,0 +1,73 @@
+/* ===== 1. Reset / Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    color: #1B2A75;
+  }
+
+  h2, h3 {
+    font-weight: 500;
+    color: #1B2A75;
+  }
+
+  /* ===== 2. Layout (grobe Struktur) ===== */
+  .hero{
+      background-image: url(images/hero.png);
+      background-size: cover;
+      background-position: bottom; /* Wo wird das Bild "verankert"*/
+      height: 850px;
+      display: flex;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between; /* Logo links, Navigation rechts */
+    align-items: center;            /* vertikal zentrieren */
+    padding: 1rem 2rem;
+  }
+
+  /* ===== 3. Komponenten ===== */
+
+.logo__image{
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    font-weight: 500;
+    gap: 2rem; /* Abstand zwischen den Elementen */
+}
+
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:active {
+  color: #1B2A75; /* oder deine Wunschfarbe */
+  text-decoration: none; /* keine Unterstreichung */
+}
+
+.hero {
+    display: flex;
+}
+
+.box {
+    align-items: center;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 20px;
+    border: 5px solid blue;
+}
