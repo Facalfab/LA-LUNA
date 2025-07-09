@@ -23,13 +23,6 @@ h1 {
   }
 
   /* ===== 2. Layout (grobe Struktur) ===== */
-  .hero{
-      background-image: url(images/hero.png);
-      background-size: cover;
-      background-position: bottom; /* Wo wird das Bild "verankert"*/
-      height: 850px;
-      display: flex;
-  }
 
   header {
     display: flex;
@@ -61,8 +54,15 @@ h1 {
 }
 
 .hero {
-    display: flex;
+  width: 100%;
+  overflow: hidden;
 
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .features {
