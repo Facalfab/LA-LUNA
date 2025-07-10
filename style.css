@@ -28,7 +28,6 @@ h1 {
     display: flex;
     justify-content: space-between; /* Logo links, Navigation rechts */
     align-items: center;            /* vertikal zentrieren */
-    padding: 1rem 2rem;
   }
 
   /* ===== 3. Komponenten ===== */
@@ -43,6 +42,7 @@ h1 {
     display: flex;
     font-weight: 500;
     gap: 2rem; /* Abstand zwischen den Elementen */
+    margin-right: 2rem;
 }
 
 .nav a:link,
@@ -87,7 +87,7 @@ h1 {
 .boxes__benefit-box {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   padding: 16px;
 }
@@ -98,11 +98,16 @@ h1 {
   border-radius: 12px;
   flex: 1 1 200px;
   box-sizing: border-box;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);;
 }
 
 .benefit-box:hover {
   border-color: #8B0000;
   transform: scale(1.01);
   cursor: pointer;
+}
+
+.img__box {
+  height: 250px;
+  border-radius: 12px;
 }
